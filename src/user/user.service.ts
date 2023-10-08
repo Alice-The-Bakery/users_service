@@ -14,7 +14,7 @@ export class UserService {
 
   async create(createUserDto: CreateUserDto) {
     try {
-      const { email, name,password } = createUserDto;
+      const { email, name, password } = createUserDto;
 
       const user = this.userRepository.findOneByEmail(email);
 
